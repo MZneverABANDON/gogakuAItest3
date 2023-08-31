@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <input type="text" id="websiteLink" placeholder="Enter website link" oninput="fetchWebsiteData()">
+        <input type="text" id="websiteLink" placeholder="Enter website link" onkeydown="if(event.keyCode === 13) fetchWebsiteData();">
         <div id="wordCount" class="bigFont"></div>
         <div id="currentTime" class="bigFont"></div>
         <div id="websiteSize" class="bigFont"></div>
